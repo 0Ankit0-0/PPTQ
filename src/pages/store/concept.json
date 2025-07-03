@@ -1,0 +1,150 @@
+{
+    "qm": [
+        {
+            "title": "Quality Management (QM)",
+            "definition": "Quality Management (QM) is the overall discipline of ensuring that an organization’s processes, products, and people meet defined quality objectives. In software, it encompasses planning, coordinating, and improving quality goals, standards, and practices across the organization.",
+            "colorClass": "text-purple-600 dark:text-purple-400",
+            "scope": [
+                "Covers entire software lifecycle: from requirements to maintenance",
+                "Includes quality planning, control, assurance, and improvement",
+                "Applies at the organizational and project levels",
+                "Uses frameworks like ISO 9001 and CMMI to structure and improve processes"
+            ],
+            "methodology": [
+                "Follows Plan-Do-Check-Act (PDCA) cycle",
+                "Implements policies through Quality Management Systems (QMS)",
+                "Conducts regular audits and reviews",
+                "Allocates resources for tools, training, and process development",
+                "Adopts international standards (e.g., ISO 9001, IEEE 730, CMMI)"
+            ],
+            "role_in_sdlc": [
+                "Defines quality requirements during planning",
+                "Monitors implementation of standards during development",
+                "Evaluates outcomes in maintenance through metrics (e.g., defect rates)",
+                "Guides all SDLC phases with organization-wide quality goals"
+            ],
+            "differences": [
+                "QM is strategic, covering QA, QC, and more",
+                "QM sets the overall quality policy; QA and QC implement it",
+                "Broader than QA (process) and QC (product)",
+                "Led by quality managers and engineers, not developers or testers alone"
+            ],
+            "examples": [
+                "SAP’s QM team follows ISO 9001 across global development",
+                "Aerospace projects adopt ISO 90003 with audits and defect prevention",
+                "A company using QM may enforce coding/testing standards across teams"
+            ]
+        }
+    ],
+    "qa": [
+        {
+            "title": "Quality Assurance (QA)",
+            "definition": "QA is the process-focused subset of QM that aims to prevent defects by ensuring development processes are well-defined, consistent, and properly followed.",
+            "colorClass": "text-indigo-600 dark:text-cyan-400",
+            "scope": [
+                "Covers all development phases: planning, design, coding, testing",
+                "Focused on process quality, not product quality",
+                "Involves standardizing workflows and improving process efficiency",
+                "Implements process audits and reviews to ensure compliance"
+            ],
+            "methodology": [
+                "Uses frameworks like IEEE 730, ISO 9001",
+                "Applies Lean, Six Sigma, TQM for process improvement",
+                "Defines quality plans, test strategies, coding standards",
+                "Conducts training and peer reviews",
+                "Enforces practices like Test-Driven Development (TDD), CI/CD"
+            ],
+            "role_in_sdlc": [
+                "Begins in planning (e.g., define test strategy, quality metrics)",
+                "Ensures adherence to best practices during development",
+                "Supports defect prevention via checklists, process monitoring",
+                "Contributes to continuous improvement via retrospectives"
+            ],
+            "differences": [
+                "QA is preventative and process-focused",
+                "QA ensures processes are followed to avoid defects",
+                "QA is more technical and tactical than QM",
+                "Does not directly test the product (that’s QC)"
+            ],
+            "examples": [
+                "Wikimedia Foundation’s QA team enforces coding and peer review standards",
+                "Agile teams use retrospectives and sprint planning to improve QA",
+                "Microsoft’s SDET roles focus on building frameworks for early defect detection"
+            ]
+        }
+    ],
+    "qc": [
+        {
+            "title": "Quality Control (QC)",
+            "definition": "QC is the product-focused subset of QM that aims to detect defects by inspecting and testing the final software products to ensure they meet specified requirements.",
+            "colorClass": "text-emerald-600 dark:text-emerald-400",
+            "scope": [
+                "Focuses on detecting defects in code, design, and requirements",
+                "Includes all verification activities (e.g., testing, code reviews)",
+                "Ensures deliverables meet defined quality criteria",
+                "Often performed using tools and metrics (e.g., defect rate, coverage)"
+            ],
+            "methodology": [
+                "Applies automated and manual testing: unit, integration, system, UAT",
+                "Uses testing tools and CI systems",
+                "Tracks defects, performs static/dynamic analysis",
+                "Uses regression testing, performance and security testing",
+                "Relies on code coverage metrics and bug reports for improvement"
+            ],
+            "role_in_sdlc": [
+                "Occurs during and after development",
+                "Includes unit testing in coding phase",
+                "Includes system and acceptance testing in later stages",
+                "Provides feedback to QA and development teams"
+            ],
+            "differences": [
+                "QC is reactive: it detects issues after implementation",
+                "Focuses on output quality rather than process",
+                "Subset of QA/QM with emphasis on testing",
+                "Ensures the product conforms to specifications"
+            ],
+            "examples": [
+                "Netflix uses chaos engineering, unit tests, UI automation for QC",
+                "Small teams may do QC via developer-written tests",
+                "IBM’s SQA team used automated tests to reduce manual costs by $76K"
+            ]
+        }
+    ],
+    "sqa": [
+        {
+            "title": "Software Quality Assurance (SQA)",
+            "definition": "SQA is the comprehensive application of QA, QC, and QM principles to software engineering. It ensures processes and products meet software-specific quality standards through planning, audits, monitoring, and verification.",
+            "colorClass": "text-orange-600 dark:text-orange-400",
+            "scope": [
+                "Applies QA/QC methods specifically to software",
+                "Covers requirements, design, development, testing, deployment",
+                "Involves planning, audit, verification, validation, and metrics tracking",
+                "Ensures independent oversight over software quality processes"
+            ],
+            "methodology": [
+                "Follows IEEE 730, ISO/IEC 12207, ISO/IEC 25010 standards",
+                "Develops SQA plans with defined procedures",
+                "Audits project deliverables and processes",
+                "Monitors test coverage, traceability, version control",
+                "Implements quality gates, review checklists, and automated tools"
+            ],
+            "role_in_sdlc": [
+                "Participates in requirement reviews for completeness",
+                "Audits design and development practices",
+                "Oversees testing activities and validates outputs",
+                "Ensures continuous improvement across projects and teams"
+            ],
+            "differences": [
+                "SQA is QA specialized for software",
+                "More focused on software-specific standards and practices",
+                "Covers both QA (process) and QC (product) activities",
+                "Independent from development teams for objectivity"
+            ],
+            "examples": [
+                "Verizon SQA team used IBM Rational Robot to automate 98% of tests",
+                "Douglas Cook noted major defect reduction after adopting SQA",
+                "In DevOps/agile teams, CI/CD pipelines with automated testing are SQA practices"
+            ]
+        }
+    ]
+}

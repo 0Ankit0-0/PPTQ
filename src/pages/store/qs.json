@@ -1,0 +1,122 @@
+[
+  {
+    "level": "Basic",
+    "question": "What is the primary goal of Quality Management (QM) in software development?",
+    "options": {
+      "A": "To control project timelines",
+      "B": "To ensure processes, products, and people meet defined quality objectives",
+      "C": "To increase the number of developers",
+      "D": "To create user interfaces"
+    },
+    "answer": "B",
+    "explanation": "Quality Management ensures that all aspects of the software development lifecycle meet quality objectives including processes, products, and human factors."
+  },
+  {
+    "level": "Basic",
+    "question": "Which of the following is a key component of Quality Assurance (QA)?",
+    "options": {
+      "A": "Improving and maintaining the development process",
+      "B": "Fixing defects after release",
+      "C": "Writing unit tests only",
+      "D": "Managing customer feedback"
+    },
+    "answer": "A",
+    "explanation": "QA focuses on improving the development process to prevent defects, ensuring quality is built into the product from the start."
+  },
+  {
+    "level": "Basic",
+    "question": "Which activity is primarily associated with Quality Control (QC)?",
+    "options": {
+      "A": "Hiring testers",
+      "B": "Setting company-wide quality policies",
+      "C": "Code inspection and system testing",
+      "D": "Defining project budgets"
+    },
+    "answer": "C",
+    "explanation": "QC involves verification activities such as code inspections and testing to ensure the product meets defined quality standards."
+  },
+  {
+    "level": "Intermediate",
+    "question": "How does Software Quality Assurance (SQA) differ from generic QA?",
+    "options": {
+      "A": "SQA emphasizes software-specific standards and oversight",
+      "B": "SQA is only applied in hardware industries",
+      "C": "SQA focuses only on deployment phase",
+      "D": "SQA skips testing and auditing"
+    },
+    "answer": "A",
+    "explanation": "SQA specializes QA principles for software, focusing on software-specific standards and often involves independent oversight of software processes."
+  },
+  {
+    "level": "Intermediate",
+    "question": "What does the 'Plan-Do-Check-Act' cycle in Quality Management help with?",
+    "options": {
+      "A": "Driving continuous process improvement",
+      "B": "Reducing team sizes",
+      "C": "Planning marketing campaigns",
+      "D": "Creating test data for performance tests"
+    },
+    "answer": "A",
+    "explanation": "The PDCA cycle helps teams improve processes continuously by planning, executing, checking results, and taking corrective action."
+  },
+  {
+    "level": "Intermediate",
+    "question": "Which of the following is true about Quality Management (QM) and Quality Assurance (QA)?",
+    "options": {
+      "A": "QM sets the quality policy, QA enforces it through processes",
+      "B": "QA operates independently of organizational goals",
+      "C": "QM is only concerned with testing",
+      "D": "QA is broader than QM"
+    },
+    "answer": "A",
+    "explanation": "QM is strategic, setting quality objectives and policies, while QA ensures these policies are implemented via disciplined processes."
+  },
+  {
+    "level": "Advanced",
+    "question": "In an organization using Six Sigma as part of QA, what is the primary objective?",
+    "options": {
+      "A": "Speed up release cycles regardless of quality",
+      "B": "Define user interfaces more effectively",
+      "C": "Minimize process variation and defects",
+      "D": "Detect bugs post-release"
+    },
+    "answer": "C",
+    "explanation": "Six Sigma is a quality methodology focused on reducing variation and defects in processes to improve overall quality."
+  },
+  {
+    "level": "Advanced",
+    "question": "Which role is typically responsible for overseeing quality across all phases of the SDLC in SQA?",
+    "options": {
+      "A": "Marketing Manager",
+      "B": "SQA Engineer",
+      "C": "Frontend Developer",
+      "D": "Scrum Master"
+    },
+    "answer": "B",
+    "explanation": "SQA Engineers monitor, audit, and ensure that quality standards are met across the software development lifecycle."
+  },
+  {
+    "level": "Advanced",
+    "question": "What is one major distinction between QA and QC in software projects?",
+    "options": {
+      "A": "QC only involves documentation",
+      "B": "QC is broader and sets quality policies",
+      "C": "QA focuses on processes, QC focuses on the final product",
+      "D": "QA is reactive, QC is proactive"
+    },
+    "answer": "C",
+    "explanation": "QA is about process and prevention, while QC is about evaluating the finished product for defects and ensuring it meets quality criteria."
+  },
+  {
+    "level": "Advanced",
+    "question": "Why is traceability important in Software Quality Assurance (SQA)?",
+    "options": {
+      "A": "It tracks the number of team meetings",
+      "B": "It links requirements to tests and code for verification",
+      "C": "It ensures faster internet speeds",
+      "D": "It helps reduce development cost only"
+    },
+    "answer": "B",
+    "explanation": "Traceability ensures every requirement is tested and implemented correctly, supporting validation and compliance in software projects."
+  }
+]

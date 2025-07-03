@@ -65,7 +65,6 @@ const Quizz = ({ mode }) => {
     setCurrentIndex((prev) => prev + 1);
   };
 
-  // Handler for restarting the quiz
   const handleRestartQuiz = () => {
     setCurrentIndex(0);
     setScore(0);
@@ -86,7 +85,24 @@ const Quizz = ({ mode }) => {
     setQuizStarted(false);
   };
 
+  const getScoreComment = (finalScore, totalQuestions) => {
+    const percentage = (finalScore / totalQuestions) * 100;
+
+    if (finalScore <= 3) {
+      return "Looks like you need a bit more practice on these concepts!";
+    } else if (finalScore > 3 && finalScore < 7) {
+      return "Solid effort! You've got a good grasp, keep learning!";
+    } else if (finalScore >= 7 && finalScore < totalQuestions) {
+      return "Excellent work! You're really good at this!";
+    } else if (finalScore === totalQuestions) {
+      return "Perfect score! You're a Quality Management master!";
+    }
+  };
+
   if (currentIndex >= shuffledQuestions.length) {
+    const totalQuestions = shuffledQuestions.length;
+    const comment = getScoreComment(score, totalQuestions);
+
     return (
       <div
         className={`min-h-screen flex items-center justify-center ${
@@ -99,9 +115,12 @@ const Quizz = ({ mode }) => {
           <h1 className="text-3xl font-extrabold text-green-600 dark:text-green-400 mb-4">
             Quiz Completed!
           </h1>
-          <p className={`text-xl ${textColorClass} mb-6`}>
+          <p className={`text-xl ${textColorClass} mb-2`}>
             Your Score: <span className="font-bold">{score}</span> out of{" "}
-            <span className="font-bold">{shuffledQuestions.length}</span>
+            <span className="font-bold">{totalQuestions}</span>
+          </p>
+          <p className={`text-lg ${subTextColorClass} mb-6 italic`}>
+            "{comment}"
           </p>
           <button
             className="mt-6 px-8 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 ease-in-out transform hover:scale-105"
@@ -114,7 +133,6 @@ const Quizz = ({ mode }) => {
     );
   }
 
-  // Quiz start screen
   if (!quizStarted) {
     return (
       <div
@@ -144,7 +162,6 @@ const Quizz = ({ mode }) => {
     );
   }
 
-  // Main Quiz display
   return (
     <div
       className={`min-h-screen flex items-center justify-center ${
@@ -179,11 +196,11 @@ const Quizz = ({ mode }) => {
                 ${
                   selectedOption
                     ? key === currentQ.answer
-                      ? "bg-green-100 border-green-500 text-green-800 dark:bg-green-900 dark:border-green-600 dark:text-green-200" // Correct answer
+                      ? "bg-green-100 border-green-500 text-green-800 dark:bg-green-900 dark:border-green-600 dark:text-green-200"
                       : key === selectedOption
-                      ? "bg-red-100 border-red-500 text-red-800 dark:bg-red-900 dark:border-red-600 dark:text-red-200" // Incorrect selected
-                      : `${optionDefaultBgClass} ${optionDefaultBorderClass} ${optionDefaultTextColor} opacity-70 cursor-not-allowed` // Unselected
-                    : `${optionDefaultBgClass} ${optionDefaultBorderClass} ${optionDefaultTextColor} hover:bg-indigo-50 hover:border-indigo-300 dark:hover:bg-gray-600 dark:hover:border-cyan-500` // Default hover
+                      ? "bg-red-100 border-red-500 text-red-800 dark:bg-red-900 dark:border-red-600 dark:text-red-200"
+                      : `${optionDefaultBgClass} ${optionDefaultBorderClass} ${optionDefaultTextColor} opacity-70 cursor-not-allowed`
+                    : `${optionDefaultBgClass} ${optionDefaultBorderClass} ${optionDefaultTextColor} hover:bg-indigo-50 hover:border-indigo-300 dark:hover:bg-gray-600 dark:hover:border-cyan-500`
                 }
                 ${
                   !!selectedOption
@@ -191,7 +208,7 @@ const Quizz = ({ mode }) => {
                     : "cursor-pointer transform hover:-translate-y-1"
                 }
               `}
-              disabled={!!selectedOption} // Disable buttons after an option is selected
+              disabled={!!selectedOption}
             >
               <span className="font-bold mr-2">{key}.</span> {value}
             </button>

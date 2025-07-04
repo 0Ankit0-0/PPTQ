@@ -1,7 +1,6 @@
 # PPTQ
 
 ![PPTQ Home Screenshot](home.png)
-![PPTQ Mobile view Screenshot](moblieV.png)
 
 [Visit Us](https://pptq-7ue2.vercel.app/)
 

@@ -2,7 +2,7 @@ import React from "react";
 import ankit from "./assets/ankit.jpeg";
 import asmith from "./assets/asmith.jpeg";
 import Dhruv from "./assets/Dhruv.jpeg";
-import omkar from "./assets/omkar.png";
+import omkar from "./assets/omkars.jpeg";
 
 const teamMembers = [
   {
